@@ -1,0 +1,23 @@
+{
+    "name": "qdzsoft/yii2-validators",
+    "description": "Validator Collections",
+    "keywords": ["yii2", "extension", "validators"],
+    "homepage": "https://github.com/qdzsoft/yii2-validators",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neptune Lee",
+            "email": "neptune.lee@outlook.com",
+            "homepage": "http://www.yiioc.com/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "qdzsoft\\validators\\": ""
+        }
+    }
+}
