@@ -30,9 +30,9 @@ class OrfValidator extends GeneValidator
      */
     protected function validateValue($value)
     {
-        if (parent::validateValue($value)) {
+        if (is_null(parent::validateValue($value))) {
             $value2 = preg_replace('/[\d\s\n\r]+/i', '', $value);
-            if (str_len($value2) % 3 == 0) {
+            if (strlen($value2) % 3 == 0) {
                 $valid = true;
             } else {
                 $valid = false;
